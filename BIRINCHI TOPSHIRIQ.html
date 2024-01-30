@@ -1,0 +1,485 @@
+<!DOCTYPEhtml>
+
+<html>
+    <head>
+<style>
+body {background-color: rgb(195, 235, 225);}
+body {background-color: rgb(195, 235, 225);}
+    header {
+    margin-top: 100px; 
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    width: 700px;
+    height: 100px;
+    font-size:15px;
+    padding: 35px;
+}
+
+.yulduzcha {color: red;}
+    section { margin-top: 1px; 
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    width: 700px;
+    padding: 35px;}
+
+    .form1, .form2, .form3, .form6 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .label1, .label2, .label3, .label6 {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .label1, .label2, .label5 {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .input1, .select1, .LinkedInl {
+      margin-bottom: 5px;
+      margin-right: 25px;
+      font-size: 14px; 
+      width: 200px;   
+      height: 30px;   
+      
+    }
+    .input2, .city, #phone {
+        margin-bottom: 5px;
+        margin-right: 35px;
+        font-size: 14px; 
+        width: 300px;   
+        height: 30px;  
+     }
+     
+    .input5, .zipcode, .email{
+      margin-bottom: 5px;
+      margin-right: 35px;
+      font-size: 14px; 
+      width: 650px;   
+      height: 30px;   
+   }
+    #quantity {
+    font-size: 30px; 
+    width: 240px;   
+    height: 30px;   
+    }  
+    #radio1, #radio2, #radio3, #radio4, #radio5, .radioo {
+      display: none; }
+    .radioo {
+      display: inline-block;
+      border: 2px solid #3498db;
+      border-radius: 50%; 
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 36px; 
+      cursor: pointer;
+      margin: 5px;
+      color: #3498db;
+      position: relative; }
+
+        .table2 {width: 100%;
+        border-collapse: collapse;}
+        th,
+        td
+        {border: 1px solid black;}
+        .th1, .td1 {background-color: #3498db;}
+
+        #small2 {margin-left:230px;}
+
+        #file1,#file2  {
+          display: inline-block;
+          border: 2px solid #0e1011;
+          width: 100%;
+          height: 300px;
+          text-align: center;
+          line-height: 300px; 
+          cursor: pointer;
+          background-color: rgb(241, 248, 248);
+          margin: 5px;
+          color: #3498db;
+          position: relative; 
+          }
+          .button1 { 
+          border: 2px solid #0e1011;
+          width: 30%;
+          height: 30px;
+          text-align: center;
+          line-height: 30px; 
+          cursor: pointer;
+          margin-left: 35%;
+          color:white;
+          background-color: #0a0e11;
+          
+          position: relative; }
+      
+</style>
+        <title>birinchi topshirigim</title>      
+        </head>
+
+
+
+        <body>
+        <div class="headertext">
+             <header class="box">
+        
+            <h1>Job Application</h1>
+            <h3>Please complete the form below to apply for a position with us</h3>
+       
+        </header>
+        </div>
+        
+        <section>
+            <div class="Fullname"> <!--FULNAME-->
+                
+                <h3>
+                Full name <sup><span class="yulduzcha">*</span></sup>
+                </h3>
+            <form action="/server/php" method="get" class="form1">
+              <div><input type="text" name="Full Name" id="Fullname1" class="input1"> 
+                <label for="Fullname1" class="label1">First Name</label>
+            </div>   
+        <div><input type="text" name="Last Name" id="Fullname2" class="input1">
+                <label for="Fullname2" class="label1">Last Name</label>                   
+            </div>
+        <div><input type="text" name="Middle Name" id="Fullname3"class="input1">
+                <label for="Fullname3" class="label1">Middle Name</label>
+            </div>
+            </form>
+            </div>
+        <br>
+
+            <div class="Bodysize"><!--BODYSIZE-->
+                <h3>Body Size <sup><span class="yulduzcha">*</span></sup></h3>
+            <form action="/server/php" method="get" class="form2">
+            <div>
+                <input type="text" Height="Full Name" id="Height" placeholder="sm" class="input2"> 
+                <label for="Height" class="label2">Height</label>
+            </div>
+            <div>
+                <input type="text" weight="Full Name" id="weight" placeholder="kg" class="input2"> 
+                <label for="Height" class="label2">weight</label>              
+            </div>   
+            </div>
+            <br><br>
+            <Div class="Birth_Date"> <!--BirthDATE-->
+                
+                <h3>Birth Date <sup><span class="yulduzcha">*</span></sup></h3>
+                 <div>  
+                 <form action="/server/php" method="get" class="form3">
+                <select name="Month" id="Month" class="select1">
+                <option value="0">oyni tanlang</option>
+                <option value="1">yanvar</option>
+                <option value="2">fevral</option>
+                <option value="3">mart</option>
+                <option value="4">aprel</option>
+                <option value="5">may</option>
+                <option value="6">iyun</option>
+                <option value="7">iyul</option>
+                <option value="8">avgust</option>
+                <option value="9">sentyabr</option>
+                <option value="10">oktyabr</option>
+                <option value="11">noyabr</option>
+                <option value="12">dekabr</option>
+                </select>
+                <label for="Month" class="label3">month</label>
+            </div>
+            <div>
+                 <select name="DAY" id="day" class="select1">
+                <option value="0">Kunni tanlang</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <opt-ion value="12">...31</option>
+                </select>
+                <label for="day" class="label3">day</label>
+            </div>
+            <div>
+                <select name="year" id="year" class="select1">
+                <option value="0">Yilni tanlang</option>
+                <option value="1">2020</option>
+                <option value="2">2019</option>
+                <option value="3">2018</option>
+                <option value="4">2017</option>
+                <option value="5">2016</option>
+                <option value="6">2015</option>
+                <option value="7">2014</option>
+                <option value="8">2015</option>
+                <option value="9">2014</option>
+                <option value="10">2013</option>
+                <option value="11">2012</option>
+                <option value="12">...1900</option>
+                </select>
+                <label for="year" class="label3">year</label>
+            </div>
+        </Div>
+        </form>
+        <br><br>     
+            <div class="FamilyStatus"> <!--FAMELY STATUS-->
+            <form action="server/php" method="get">
+            <h3>Family Status <sup><span class="yulduzcha">*</span></sup></h3>
+                <input type="radio" name="Family Status" value="divorced">
+                <label for="divorced" class="label4">divorced</label><br>
+                <input type="radio" name="Family Status" value="Married">
+                <label for="Married" class="label4">Married</label><br>
+                <input type="radio" name="Family Status" value="Single">
+                <label for="Single" class="label4">Single</label><br>
+                <input type="radio" name="Family Status" value="Other">
+                <label for="Other" class="label4">Other</label>
+             </form>
+            </div>
+        <br><br>
+
+
+            <div class="Current_Address"><!--CURRENT ADRESS-->
+            <h3>Current Address</h3>
+
+                <form action="server/php" method="get" class="form5">
+
+                <input type="text" name="Street Address" class="input5">
+                <label for="adress" class="label5">Street Address</label> 
+               
+                <input type="text" name="Street Address Line 2" class="input5">
+                <label for="adress" class="label5">Street Address line 2</label>
+
+                <input type="text" name="City" class="city">
+                <label for="adress" class="label6">City</label>
+
+                <input type="text" name="City" class="city">
+                <label for="adress" class="label6">State province</label>
+            </form>
+                <br>
+                <input type="text" name="Zip Code" class="zipcode">
+                <label for="zipcode" class="label6">EZip Code</label>
+                <br>
+                <h4>EMAIL ADRESS</h4>
+                <input type="email" name="email" class="email" placeholder="ex:myname@example/com">
+                <label for="email" class="label3">Email</label></td>
+                
+
+                <label for="phone"class="label3"><h4>Phone Number</h4></label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="90" class="input1">
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="9000909">
+
+                <label for="LinkedIn" class="label1"><h3>LinkedIn</h3></label>
+                <input type="LinkedIn" name="LinkedIn" class="input1">
+
+                <label for="quantity" class="label1">Experience</label>
+              
+                <button type="button" onclick="changeQuantity(1)">+</button>
+                <input type="text" id="quantity" name="quantity" value="0">
+                <button type="button" onclick="changeQuantity(-1)">-</button>
+               
+              
+              <script>
+                 function changeQuantity(value) {
+                var quantityInput = document.getElementById('quantity');
+                var currentValue = parseInt(quantityInput.value, 10);
+                quantityInput.value = currentValue + value;}
+            </script>
+            </form>
+            <br><br>
+             <hr>
+    
+            <Div class="PositionApplied"> <!--Position Applied-->
+              
+            <form action="/server/php" method="get">
+                 <label for="Position Applied" class="label1">Position Applied</label>
+                <select name="Position Applied" id="Position Applied"  class="select1">
+                <option value="0">Please Select</option>
+                <option value="1">Marceting specialist</option>
+                <option value="2">Sales Manager</option>
+                <option value="3">Product lead</option>
+                <option value="4">Developer</option>
+                </select>
+        
+                <label for="How did you hear about us" class="label1">How did you hear about us</label>
+                <select name="How did you hear about us" id="How did you hear about us" class="select1">
+                <option value="0">Please Select</option>
+                <option value="1">LinkedInl</option>
+                <option value="2">EVENT</option>
+                <option value="3">Social media</option>
+                <option value="4">Company WebSite</option>
+                <option value="">Famly/Friend</option>
+                <option value="">Other</option>
+                </select>
+                
+                <label for="dateInput" class="label1">Available Start Date</label>
+                <input type="date" id="dateInput" name="dateInput" required class="input1">
+    
+                <script>
+                var today = new Date();
+                var year = today.getFullYear();
+                var month = (today.getMonth() + 1).toString().padStart(2, '0'); 
+                var day = today.getDate().toString().padStart(2, '0'); 
+                var formattedDate = year + '-' + month + '-' + day;
+                document.getElementById('dateInput').value = formattedDate;
+                </script>
+         <br><br><br>
+         </form>
+
+        <Div class="JADVAL"> <!--JADVAL-->  
+            <table class="table2">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th class="th1">Beginner</th>
+                        <th class="th1">Elementary</th>
+                        <th class="th1">Advanced</th>
+                        <th class="th1">Expert</th>
+                    </tr>
+                    <tr>
+                                              
+                    </tr>
+                    <tr>
+                        <th class="th1">WORD</th>
+                        <th>
+                            <label for="Beginner"></label>
+                            <input type="radio"name="WORD" value="Beginner">
+                        </th>
+                        <th>
+                            <label for="Elementary"></label>
+                            <input type="radio"name="WORD" value="Elementary">
+                        </th>
+                        <th>
+                            <label for="Advanced"></label>
+                            <input type="radio"name="WORD" value="Advanced">
+                        </th>
+                        <th>
+                            <label for="Expert"></label>
+                            <input type="radio"name="WORD" value="Expert">
+                        </th>
+
+                    </tr>
+                    <tr>
+                        <th class="th1">EXCEL</th>
+                            <th>
+                                <label for="Beginner"></label>
+                                <input type="radio"name="EXCEL" value="Beginner">
+                            </th>
+                            <th>
+                                <label for="Elementary"></label>
+                                <input type="radio"name="EXCEL" value="Elementary">
+                            </th>
+                            <th>
+                                <label for="Advanced"></label>
+                                <input type="radio"name="EXCEL" value="Advanced">
+                            </th>
+                            <th>
+                                <label for="Expert"></label>
+                                <input type="radio"name="EXCEL" value="Expert">
+                            </th>
+                    </tr>
+                    <tr>
+                        <th class="th1">1C</th>
+                        <th>
+                            <label for="Beginner"></label>
+                            <input type="radio"name="1C" value="Beginner">
+                        </th>
+                        <th>
+                            <label for="Elementary"></label>
+                            <input type="radio"name="1C" value="Elementary">
+                        </th>
+                        <th>
+                            <label for="Advanced"></label>
+                            <input type="radio"name="1C" value="Advanced">
+                        </th>
+                        <th>
+                            <label for="Expert"></label>
+                            <input type="radio"name="1C" value="Expert">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="th1">Programming Language</th>
+                        <th>
+                            <label for="Beginner"></label>
+                            <input type="radio"name="Programming Language" value="Beginner">
+                        </th>
+                        <th>
+                            <label for="Elementary"></label>
+                            <input type="radio"name="Programming Language" value="Elementary">
+                        </th>
+                        <th>
+                            <label for="Advanced"></label>
+                            <input type="radio"name="Programming Language" value="Advanced">
+                        </th>
+                        <th>
+                            <label for="Expert"></label>
+                            <input type="radio"name="Programming Language" value="Expert">
+                        </th>
+                    </tr>
+                </thead>
+                </table>
+                <br><br>
+                
+        <Div class="LANGUAGE"> <!--Ability knowing English Language-->  
+                
+            <h3>Ability knowing English Language</h3>
+            
+            <div>
+            <input type="radio" id="radio1" name="number" value="1">
+            <label for="radio1" class="radioo">1</label>
+            
+            <input type="radio" id="radio2" name="number" value="2">
+            <label for="radio2"class="radioo">2</label>
+          
+            <input type="radio" id="radio3" name="number" value="3">
+            <label for="radio3"class="radioo">3</label>
+
+            <input type="radio" id="radio4" name="number" value="4">
+            <label for="radio4"class="radioo">4</label>
+
+            <input type="radio" id="radio5" name="number" value="5">
+            <label for="radio5"class="radioo">5</label>
+            </div>
+            <small>worst</small>
+            <small id="small2">best</small>
+
+        <Div class="ApplicantDocument"> <!--Applicant Document(Diploma, Certificate)-->  
+            <h3>Applicant Document(Diploma, Certificate)</h3>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="fileInput" id="file1">
+            <input type="file" id="fileInput" name="Diploma" accept=".pdf, .doc, .docx, .jpg"></label>
+            </form> 
+        </Div>
+        <br><br>
+           
+
+            </form>
+        <Div class="Resume"> <!--Applicant Document(Diploma, Certificate)-->  
+            <h3>Upload Your Resume</h3>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="fileInput" id="file2">
+            <input type="file" id="fileInput2" name="Resume" accept=".pdf, .doc, .docx, .jpg"></label>
+            </form> 
+
+            <div class="letter">
+                <form action="/server/php" method="get">
+                <label for="letter" class="label"><h3>Cover Letter</h3></label>
+                <textarea name="Cover Letter" id="letter" cols="93" rows="20"></textarea>
+                </div>
+
+
+            <Div class="apply"> <!--Applicant Document(Diploma, Certificate)-->  
+            <button type="submit" id="apply1" class="button1"> APPLY
+            </button>
+            </div>
+            
+        </Div>
+    </section>
+        
+
+    </body>
+</html>
